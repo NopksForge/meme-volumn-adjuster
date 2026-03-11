@@ -6,12 +6,13 @@ import { Menu } from "./components/menu/menu";
 import { RandomButton } from "./components/random_button/random_buttom";
 import { RequestForm } from "./components/request_form/request_form";
 import { XoGame } from "./components/xo/xo";
+import { DndDiceRoll } from "./components/roll_20/roll_20";
 
 export default function Home() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [volume, setVolume] = useState(0);
   const [mode, setMode] =
-    useState<"normal" | "alphabet" | "random" | "request" | "xo">(
+    useState<"normal" | "alphabet" | "random" | "request" | "xo" | "dnd">(
       "normal",
     );
 
@@ -77,6 +78,9 @@ export default function Home() {
           )}
           {mode === "xo" && (
             <XoGame value={volume} onChange={handleVolumeChange} />
+          )}
+          {mode === "dnd" && (
+            <DndDiceRoll value={volume} onChange={handleVolumeChange} />
           )}
         </section>
       </main>

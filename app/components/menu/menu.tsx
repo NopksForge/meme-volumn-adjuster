@@ -1,4 +1,4 @@
-type SliderMode = "normal" | "alphabet" | "random" | "request" | "xo";
+type SliderMode = "normal" | "alphabet" | "random" | "request" | "xo" | "dnd";
 
 type MenuProps = {
   activeMode: SliderMode;
@@ -29,6 +29,11 @@ const ITEMS: { id: SliderMode; label: string; description: string }[] = [
   {
     id: "xo",
     label: "XO Game",
+    description: "",
+  },
+  {
+    id: "dnd",
+    label: "DnD Dice Roll",
     description: "",
   },
 ];
