@@ -1,4 +1,4 @@
-type SliderMode = "normal" | "alphabet" | "random" | "request";
+type SliderMode = "normal" | "alphabet" | "random" | "request" | "xo";
 
 type MenuProps = {
   activeMode: SliderMode;
@@ -24,6 +24,11 @@ const ITEMS: { id: SliderMode; label: string; description: string }[] = [
   {
     id: "request",
     label: "Request Form",
+    description: "",
+  },
+  {
+    id: "xo",
+    label: "XO Game",
     description: "",
   },
 ];
