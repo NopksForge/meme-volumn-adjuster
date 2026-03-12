@@ -1,4 +1,4 @@
-## [MEME THE DB ABUSER](https://meme-the-db-abuser.vercel.app/) 🎚️
+## [THE DB ABUSER](https://meme-the-db-abuser.vercel.app/) 🎚️
 
 
 **Genre**: Sound Panel • UX Hellscape  
