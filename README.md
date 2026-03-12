@@ -8,7 +8,7 @@
 
 ### What is this? 🤔
 
-**MEME THE DB ABUSER** is actually a **tribute to the worst possible sound settings panel UX** you can imagine.
+**MEME THE dB ABUSER** is actually a **tribute to the worst possible sound settings panel UX** you can imagine.
 Instead of clean sliders and friendly toggles, this project embraces **hostile interfaces**, **confusing controls**, and **audio chaos**.
 This is a **toy project** for exploring extreme/bad UX ideas, especially for sound/audio control panels, presented like an unhinged indie game. 🎮
 
