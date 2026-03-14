@@ -302,13 +302,13 @@ export function Snake({ value, onChange }: SnakeProps) {
           <span className="inline-block h-3 w-3 rounded bg-green-500" /> +5%
         </span>
         <span className="flex items-center gap-1">
-          <span className="inline-block h-3 w-3 rounded bg-green-400" /> +1%
+          <span className="inline-block h-3 w-3 rounded bg-lime-400" /> +1%
         </span>
         <span className="flex items-center gap-1">
           <span className="inline-block h-3 w-3 rounded bg-red-500" /> -5%
         </span>
         <span className="flex items-center gap-1">
-          <span className="inline-block h-3 w-3 rounded bg-red-400" /> -1%
+          <span className="inline-block h-3 w-3 rounded bg-orange-400" /> -1%
         </span>
         <span className="flex items-center gap-1">
           <span className="inline-block h-3 w-3 rounded bg-purple-500" /> bomb
