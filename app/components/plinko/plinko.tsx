@@ -35,17 +35,18 @@ export function Plinko({ value, onChange }: PlinkoProps) {
   onChangeRef.current = onChange;
 
   useEffect(() => {
-    // Generate pegs - full grid with offset rows
+    // Generate pegs - full grid with offset rows, edge to edge
     const pegs: { x: number; y: number }[] = [];
-    const startY = 45;
-    const rowGap = 25;
-    const colGap = 24;
-    const cols = 12;
+    const startY = 50;
+    const rowGap = 22;
+    const colGap = 18;
+    const cols = 17;
+    const margin = 8;
     for (let r = 0; r < ROWS; r++) {
-      const offset = (r % 2) * (colGap / 2); // offset every other row
+      const offset = (r % 2) * (colGap / 2);
       for (let c = 0; c < cols; c++) {
-        const x = 20 + offset + c * colGap;
-        if (x > 10 && x < W - 10) {
+        const x = margin + offset + c * colGap;
+        if (x >= margin && x <= W - margin) {
           pegs.push({ x: x | 0, y: (startY + r * rowGap) | 0 });
         }
       }
