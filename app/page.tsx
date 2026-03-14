@@ -10,13 +10,14 @@ import { DndDiceRoll } from "./components/roll_20/roll_20";
 import { HorseRace } from "./components/horse_race/horse_race";
 import { Tinder } from "./components/tinder/tinder";
 import { Plinko } from "./components/plinko/plinko";
+import { Snake } from "./components/snake/snake";
 import { Footer } from "./components/footer/footer";
 
 export default function Home() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [volume, setVolume] = useState(0);
   const [mode, setMode] = useState<
-    "normal" | "alphabet" | "random" | "request" | "xo" | "dnd" | "horse_race" | "tinder" | "plinko"
+    "normal" | "alphabet" | "random" | "request" | "xo" | "dnd" | "horse_race" | "tinder" | "plinko" | "snake"
   >("normal");
 
   // Try to start playback on mount (may still be blocked by browser autoplay policies)
@@ -93,6 +94,9 @@ export default function Home() {
           )}
           {mode === "plinko" && (
             <Plinko value={volume} onChange={handleVolumeChange} />
+          )}
+          {mode === "snake" && (
+            <Snake value={volume} onChange={handleVolumeChange} />
           )}
         </section>
 
